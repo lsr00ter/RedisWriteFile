@@ -1,18 +1,21 @@
+# RedisWriteFile
 
 此脚本是通过 `Redis` 主从写出无损文件，可用于 `Windows` 平台下写出无损的 `EXE`、`DLL`、 `LNK` 和 `Linux` 下的 `OS` 等二进制文件
 
-也可以用无杂质覆写 `Linux` 中的 `/etc/shadow` 
+也可以用无杂质覆写 `Linux` 中的 `/etc/shadow`
 
 用法：
-```
-______         _ _     _    _      _ _      ______ _ _      
-| ___ \       | (_)   | |  | |    (_) |     |  ___(_) |     
-| |_/ /___  __| |_ ___| |  | |_ __ _| |_ ___| |_   _| | ___ 
+> 最好在 powershell 环境中使用
+
+```plaintext
+______         _ _     _    _      _ _      ______ _ _
+| ___ \       | (_)   | |  | |    (_) |     |  ___(_) |
+| |_/ /___  __| |_ ___| |  | |_ __ _| |_ ___| |_   _| | ___
 |    // _ \/ _` | / __| |/\| | '__| | __/ _ \  _| | | |/ _ \
 | |\ \  __/ (_| | \__ \  /\  / |  | | ||  __/ |   | | |  __/
-\_| \_\___|\__,_|_|___/\/  \/|_|  |_|\__\___\_|   |_|_|\___|     
+\_| \_\___|\__,_|_|___/\/  \/|_|  |_|\__\___\_|   |_|_|\___|
 
-                    Author : R3start   
+                    Author : R3start
           Reference : redis-rogue-server.py
 
 Usage: rediswritefile.py [options]
@@ -33,14 +36,22 @@ Options:
   -v, --verbose         Show full data stream
 
 ```
+
+## Ref
+
+- `exp.so`: <https://github.com/n0b0dyCN/redis-rogue-server>
+- `exp.dll`: <https://github.com/0671/RedisModules-ExecuteCommand-for-Windows>
+
+## Example
+
 如覆写宝塔配置文件：
 
-![bt.gif](https://github.com/r35tart/RedisWriteFile/raw/master/bt_gif.gif)
+![bt.gif](./assets/bt_gif.gif)
 
 覆写 `sethc.exe`:
 
-![sethc.gif](https://github.com/r35tart/RedisWriteFile/raw/master/sethc_ok.gif)
+![sethc.gif](./assets/sethc_ok.gif)
 
 覆写 `LNK` :
 
-![ie.gif](https://github.com/r35tart/RedisWriteFile/raw/master/ie.gif)
+![ie.gif](./assets/ie.gif)
